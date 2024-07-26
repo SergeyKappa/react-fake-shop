@@ -1,17 +1,79 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const element = <h1>Hello, React.js</h1>
+ReactDOM.render(element, document.getElementById('root'))
+//const root = ReactDOM.createRoot(document.getElementById('root'))
+//root.render(element);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+//
+function helle(){
+    const name = 'Иван-Царевич';
+    const ele = <h1>Здравствуй, {name}!</h1>;
+    //root.render(ele)
+}
+// setInterval(helle, 1500)
+
+
+//
+function tick() {
+    const ent = (
+        <div>
+            <h1>Hello, world!</h1>
+            <h2>It is {new Date().toLocaleTimeString()}.</h2>
+            <p>Я делаю сайт на React.</p>
+        </div>
+    )
+    //root.render(ent)
+  
+}
+// setInterval(tick, 2000)
+
+
+
+//
+function formatName(user) {
+    return user.firstName + ' ' + user.lastName;
+  }
+  
+  const user = {
+    firstName: 'Алесандер',
+    lastName: 'Хацкевич'
+  };
+  
+  const elem = (
+    <h1>
+      Здравствуй, {formatName(user)}!
+    </h1>
+  );
+  //root.render(elem)
+
+
+  //
+  function getGreeting(user) {
+    if (user) {
+      return <h1>Здравствуй, {formatName(user)}!</h1>;
+    }
+    return <h1>Здравствуй, незнакомец.</h1>;
+  }
+  //root.render(getGreeting())
+
+
+
+//
+  const eleent = (
+    <div>
+      <h1>Здравствуйте!</h1>
+      <h2>Рады вас видеть.</h2>
+    </div>
+  );
+  //root.render(eleent)
+
+
+  //
+  function Welcome(props) {
+    return <h1>Привет, {props.name}</h1>;
+  }
+  const ement = <Welcome name="Алиса" />;
+  //root.render(ement);// Привет Алиса
