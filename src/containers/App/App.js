@@ -3,7 +3,6 @@ import CssBaseline from '@mui/material/CssBaseline'
 import { Header } from 'containers/Header/Header'
 import { Main } from 'containers/Main/Main'
 import { Footer } from 'containers/Footer /Footer'
-import {StandardImageList}   from 'containers/Main/Main'
 
 export const App = () => {
     return (
@@ -11,7 +10,6 @@ export const App = () => {
             <CssBaseline />
             <Header />
             <Main />
-            <StandardImageList/>
             <Footer />
         </>
     )
