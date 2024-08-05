@@ -1,11 +1,45 @@
-import React from "react";
+import React from 'react'
+import logo from './airbnb-logo.png'
+
+const Navbar = () => {
+    return (
+        <>
+            <nav className="navbar">
+                <a
+                    href="https://ru.airbnb.com/?_set_bev_on_new_domain=1722837921_EAM2QyMDYzYzJmNG"
+                    target="_blank"
+                >
+                    <img src={logo} className="logo" alt="logo" />
+                </a>
+
+                <ul className="navbar--container">
+                    <li className="navbar--item">
+                        <a>Menu</a>
+                    </li>
+                    <li className="navbar--item">
+                        <a>Contacts</a>
+                    </li>
+                    <li className="navbar--item">
+                        <a> Our Products</a>
+                    </li>
+                    <li className="navbar--item">
+                        <a>About Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </>
+    )
+}
 
 const Header = (props) => {
     console.log(props)
     return (
-        <h1>
-            {props.id}: Hello i'm: {props.title}.
-        </h1>
+        <>
+            {' '}
+            <h1>
+                {props.id}: Hello i'm: {props.title}.
+            </h1>
+        </>
     )
 }
 
@@ -25,15 +59,13 @@ const Text = () => {
     )
 }
 
-const App = () => {
+export const App = () => {
     return (
         <>
+            <Navbar />
             <Header title="React" id={1} />
             <Header title="App.js" id={2} />
             <Text />
         </>
     )
 }
-
-
-export default App
