@@ -1,4 +1,4 @@
-* {
+/* * {
     box-sizing: border-box;
     list-style: none;
     margin: 0;
@@ -53,4 +53,23 @@ body {
 
         }
     }
+} */
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(39, 117, 143);
+    height: 100vh;
+}
+
+.card{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+.img--cards{
+
+    margin: 50px auto;
 }
