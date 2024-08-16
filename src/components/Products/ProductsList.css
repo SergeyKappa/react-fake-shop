@@ -1,14 +1,23 @@
-.title{
+.title {
     margin: 30px 0 !important;
     /* text-transform: uppercase;  */
 }
-.card{
+
+.card-img {
     text-align: center;
-    img{
+
+    img {
         width: 250px;
         height: 100%;
+
     }
 }
-.card-btn{
-    margin: auto !important;
+
+.card-btn {
+   justify-content: center;
+}
+.card-info{
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
 }

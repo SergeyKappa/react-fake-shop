@@ -4,6 +4,7 @@ import './ProductsList.css'
 
 export const ProductsListItem = ({
     url,
+    image,
     name,
     desc,
     type,
@@ -17,25 +18,23 @@ export const ProductsListItem = ({
     }
     return (
         <>
-            <Card sx={{ maxWidth: 345 }}>
-                <CardContent className="card">
-                    <img src={url} alt="" />
+            <Card>
+                <CardContent className='card-info'>
+                    <div className="card-img">
+                        <img src={image} alt="" />
+                    </div>
                     <h4>{name}</h4>
                     <p>{desc}</p>
-                    <div>{type}</div>
-                    <div>{capacity}</div>
+                    <div>Type: {type}</div>
+                    <div> Capacity: {capacity}</div>
                     <div>{price}</div>
                     <p>{pieces}</p>
                     <Button variant="outlined" onClick={() => setPieces(0)}>
                         Reset
                     </Button>
                 </CardContent>
-                <CardActions>
-                    <Button
-                        variant="contained"
-                        className="card-btn"
-                        onClick={addPieces}
-                    >
+                <CardActions className="card-btn">
+                    <Button variant="contained" onClick={addPieces}>
                         Add to card
                     </Button>
                 </CardActions>

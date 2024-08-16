@@ -8,13 +8,23 @@ export const ProductsList = () => {
     // let uppercase = 'uppercase'
     // let lowercase = 'lowercase'
     // let state = false
-    const cardsData = ProductsListData.map((product) => {
-        return (
-            <Grid item xs={12} sm={6} md={4} key={product.id}>
-                <ProductsListItem {...product} />
-            </Grid>
-        )
-    })
+    const cardsData = ProductsListData.map(
+        ({ id, image, url, name, desc, type, capacity, price }) => {
+            return (
+                <Grid item xs={12} sm={6} md={4} key={id}>
+                    <ProductsListItem
+                    image={image}
+                        url={url}
+                        name={name}
+                        desc={desc}
+                        type={type}
+                        capacity={capacity}
+                        price={price}
+                    />
+                </Grid>
+            )
+        }
+    )
 
     return (
         <>
