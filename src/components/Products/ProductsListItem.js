@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { Button, Card, CardActions, CardContent } from '@mui/material'
 import './ProductsList.css'
+import PropTypes from 'prop-types'
 
 export const ProductsListItem = ({
-    url,
     image,
     name,
     desc,
@@ -19,15 +19,15 @@ export const ProductsListItem = ({
     return (
         <>
             <Card>
-                <CardContent className='card-info'>
+                <CardContent className="card-info">
                     <div className="card-img">
                         <img src={image} alt="" />
                     </div>
                     <h4>{name}</h4>
                     <p>{desc}</p>
                     <div>Type: {type}</div>
-                    <div> Capacity: {capacity}</div>
-                    <div>{price}</div>
+                    <div> Capacity: {capacity} GB</div>
+                    <div>{price}$</div>
                     <p>{pieces}</p>
                     <Button variant="outlined" onClick={() => setPieces(0)}>
                         Reset
@@ -41,4 +41,16 @@ export const ProductsListItem = ({
             </Card>
         </>
     )
+}
+
+ProductsListItem.propTypes = {
+    name: PropTypes.string.isRequired,
+    desc: PropTypes.string,
+    type: PropTypes.string.isRequired,
+    capacity: PropTypes.number.isRequired,
+    price: PropTypes.number.isRequired,
+    image: PropTypes.string,
+}
+ProductsListItem.defaultProps = {
+    desc: 'No description....',
 }

@@ -9,12 +9,11 @@ export const ProductsList = () => {
     // let lowercase = 'lowercase'
     // let state = false
     const cardsData = ProductsListData.map(
-        ({ id, image, url, name, desc, type, capacity, price }) => {
+        ({ id, image, name, desc, type, capacity, price }) => {
             return (
                 <Grid item xs={12} sm={6} md={4} key={id}>
                     <ProductsListItem
-                    image={image}
-                        url={url}
+                        image={image}
                         name={name}
                         desc={desc}
                         type={type}
