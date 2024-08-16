@@ -53,4 +53,5 @@ ProductsListItem.propTypes = {
 }
 ProductsListItem.defaultProps = {
     desc: 'No description....',
+    image: 'images/noimg.png',
 }

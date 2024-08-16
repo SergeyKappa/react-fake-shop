@@ -7,7 +7,7 @@ export const ProductsListData = [
         type: 'iphone',
         capacity: 128,
         price: 500,
-        image: "/images/13mini.jpeg",
+        image: '/images/13mini.jpeg',
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ export const ProductsListData = [
         type: 'iphone',
         capacity: 32,
         price: 120,
-        image: "/images/iphone7.jpeg",
+        image: '/images/iphone7.jpeg',
     },
     {
         id: 3,
@@ -27,7 +27,7 @@ export const ProductsListData = [
         type: 'iphone',
         capacity: 256,
         price: 600,
-        image: "/images/14plus.jpeg",
+        image: '/images/14plus.jpeg',
     },
     {
         id: 4,
@@ -37,7 +37,7 @@ export const ProductsListData = [
         type: 'iphone',
         capacity: 64,
         price: 220,
-        image: "/images/8plus.jpeg",
+        image: '/images/8plus.jpeg',
     },
     {
         id: 5,
@@ -47,7 +47,7 @@ export const ProductsListData = [
         type: 'iphone',
         capacity: 128,
         price: 370,
-        image: "/images/12mini.jpeg",
+        image: '/images/12mini.jpeg',
     },
     {
         id: 6,
@@ -57,7 +57,7 @@ export const ProductsListData = [
         type: 'iphone',
         capacity: 512,
         price: 1200,
-        image: "/images/15promax.jpeg",
+        image: '/images/15promax.jpeg',
     },
     {
         id: 7,
@@ -67,7 +67,7 @@ export const ProductsListData = [
         type: 'iphone',
         capacity: 64,
         price: 350,
-        image: "/images/11.jpeg",
+        image: '/images/11.jpeg',
     },
     {
         id: 8,
@@ -77,7 +77,7 @@ export const ProductsListData = [
         type: 'iphone',
         capacity: 64,
         price: 230,
-        image: "/images/xr.jpeg",
+        image: '/images/xr.jpeg',
     },
     {
         id: 9,
@@ -87,7 +87,7 @@ export const ProductsListData = [
         type: 'iphone',
         capacity: 256,
         price: 859,
-        image: "/images/13promax.jpeg",
+        image: '/images/13promax.jpeg',
     },
     {
         id: 10,
@@ -97,7 +97,7 @@ export const ProductsListData = [
         type: 'iphone',
         capacity: 128,
         price: 600,
-        image: "/images/14.jpeg",
+        image: '/images/14.jpeg',
     },
     {
         id: 11,
@@ -107,7 +107,7 @@ export const ProductsListData = [
         type: 'iphone',
         capacity: 128,
         price: 740,
-        image: "/images/15plus.jpeg",
+        image: '/images/15plus.jpeg',
     },
     {
         id: 12,
@@ -117,6 +117,6 @@ export const ProductsListData = [
         type: 'iphone',
         capacity: 256,
         price: 999,
-        image: "/images/15pro.jpeg",
+        image: '/images/15pro.jpeg',
     },
 ]
