@@ -2,8 +2,14 @@ import React, { useState } from 'react'
 import { Button, Card, CardActions, CardContent } from '@mui/material'
 import './ProductsList.css'
 
-export const ProductsListItem = (props) => {
-    
+export const ProductsListItem = ({
+    url,
+    name,
+    desc,
+    type,
+    capacity,
+    price,
+}) => {
     const [pieces, setPieces] = useState(0)
 
     function addPieces() {
@@ -13,12 +19,12 @@ export const ProductsListItem = (props) => {
         <>
             <Card sx={{ maxWidth: 345 }}>
                 <CardContent className="card">
-                    <img src={props.url} alt="" />
-                    <h4>{props.name}</h4>
-                    <p>{props.desc}</p>
-                    <div>{props.type}</div>
-                    <div>{props.capacity}</div>
-                    <div>{props.price}</div>
+                    <img src={url} alt="" />
+                    <h4>{name}</h4>
+                    <p>{desc}</p>
+                    <div>{type}</div>
+                    <div>{capacity}</div>
+                    <div>{price}</div>
                     <p>{pieces}</p>
                     <Button variant="outlined" onClick={() => setPieces(0)}>
                         Reset
