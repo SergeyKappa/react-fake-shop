@@ -1,11 +1,20 @@
 import React from 'react'
-import { Typography } from '@mui/material'
+import { Grid, Typography } from '@mui/material'
 import './ProductsList.css'
+import { ProductsListItem } from './ProductsListItem'
+import { ProductsListData } from './ProductsListData'
 
 export const ProductsList = () => {
     // let uppercase = 'uppercase'
     // let lowercase = 'lowercase'
     // let state = false
+    const cardsData = ProductsListData.map((product) => {
+        return (
+            <Grid item xs={12} sm={6} md={4} key={product.id}>
+                <ProductsListItem {...product} />
+            </Grid>
+        )
+    })
 
     return (
         <>
@@ -14,14 +23,19 @@ export const ProductsList = () => {
                 component="h1"
                 variant="h4"
                 className="title"
-                // style={{
-                //     textTransform: state ? uppercase : lowercase,
-                //     color: 'blue',
-                //     margin: '30px 0',
-                // }}
             >
                 Products List
             </Typography>
+
+            <Grid
+                container
+                spacing={3}
+                direction="row"
+                justifyContent="space-evenly"
+                alignItems="center"
+            >
+                {cardsData}
+            </Grid>
         </>
     )
 }
