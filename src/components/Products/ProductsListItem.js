@@ -20,10 +20,10 @@ export const ProductsListItem = ({
         <>
             <Card>
                 <CardContent className="card-info">
+                    <h4>{name}</h4>
                     <div className="card-img">
                         <img src={image} alt="" />
                     </div>
-                    <h4>{name}</h4>
                     <p>{desc}</p>
                     <div>Type: {type}</div>
                     <div> Capacity: {capacity} GB</div>
@@ -51,6 +51,8 @@ ProductsListItem.propTypes = {
     price: PropTypes.number.isRequired,
     image: PropTypes.string,
 }
+
+
 ProductsListItem.defaultProps = {
     desc: 'No description....',
     image: 'images/noimg.png',
